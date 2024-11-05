@@ -24,3 +24,4 @@ public class ExampleInstrumentedTest {
         assertEquals("dicberner.victor.galeriapublica", appContext.getPackageName());
     }
 }
+
