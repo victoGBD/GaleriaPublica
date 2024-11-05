@@ -8,6 +8,8 @@ material = "1.11.0"
 activity = "1.8.0"
 constraintlayout = "2.1.4"
 pagingCommonAndroid = "3.3.2"
+pagingRuntime = "3.3.2"
+pagingGuava = "3.3.2"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -18,6 +20,8 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 paging-common-android = { group = "androidx.paging", name = "paging-common-android", version.ref = "pagingCommonAndroid" }
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagingRuntime" }
+paging-guava = { group = "androidx.paging", name = "paging-guava", version.ref = "pagingGuava" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
