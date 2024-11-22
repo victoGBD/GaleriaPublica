@@ -34,7 +34,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation(libs.paging.common.android)
     implementation(libs.paging.runtime)
     implementation(libs.paging.guava)
     testImplementation(libs.junit)

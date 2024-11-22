@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        List<String> permissions = new ArrayList<>();
+        permissions.add(Manifest.permission.READ_EXTERNAL_STORAGE);
+        checkForPermissions(permissions);
+
         final MainViewModel vm = new ViewModelProvider(this).get(MainViewModel.class);//referenciando MainViewModel
 
         bottomNavigationView = findViewById(R.id.btNav);//referenciando bottomNavigationView
@@ -76,9 +80,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume(){
         super.onResume();
-        List<String> permissions = new ArrayList<>();
-        permissions.add(Manifest.permission.READ_EXTERNAL_STORAGE);
-        checkForPermissions(permissions);
+
     }
 
     private void checkForPermissions(List<String> permissions) {
